@@ -4,7 +4,12 @@ This batch was made for people who play and want to make video broadcasts, recor
 
 #### Installation (In CMD)
 ```
-> powershell Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; Invoke-WebRequest "https://github.com/Matishzz/OBS-Studio/releases/download/Complements/OBS.Studio.US.bat" -OutFile "$env:temp\OBS.bat"; Start-process $env:temp\OBS.bat
+powershell Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; Invoke-WebRequest "https://github.com/Matishzz/OBS-Studio/releases/download/Complements/OBS.Studio.US.bat" -OutFile "$env:temp\OBS.bat"; Start-process $env:temp\OBS.bat
+```
+
+#### Installation (In Powershell 3.0)
+```
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; Invoke-WebRequest "https://github.com/Matishzz/OBS-Studio/releases/download/Complements/OBS.Studio.US.bat" -OutFile "$env:temp\OBS.bat"; Start-process $env:temp\OBS.bat
 ```
 
 Using this batch in powershell 2.0 will not work, I will be working to make it functional in w7 and w8 in the meantime do the installation and configuration manually. 
