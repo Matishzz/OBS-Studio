@@ -25,3 +25,5 @@ powershell Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.Service
 ```
 
 * __Thank you very much [Couleur](https://twitter.com/CouleurMinemen) for helping me in the creation of this script__
+
+[![Twitter](https://img.shields.io/badge/-Twitter-black?style=for-the-badge&logo=twitter)](https://twitter.com/kalebdimasi)
