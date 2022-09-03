@@ -11,7 +11,7 @@ powershell Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.Service
 ```
 
 #### Installing Manually 🔧
-For manual installation and configuration we will have to install OBS Studio and perform the following steps after the installation of OBS and run it only once 
+For manual installation and configuration we will have to install [OBS Studio](https://obsproject.com/es/download) and perform the following steps after the installation of OBS and run it only once 
 We will download the necessary complements:
 
 * [AppdataAMDOBS](https://github.com/Matishzz/OBS-Studio/releases/download/Complements/AppdataAMDOBS.zip) Everything inside will be replaced in %appdata%\obs-studio
