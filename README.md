@@ -10,7 +10,7 @@ This batch was made for people who play and want to make video broadcasts, recor
 
 For this batch to work you need to put the whole Installation command in CMD, if you are using __Powershell 2.0__ you will not be able to use it because there is no WebRequest or DownloadFile, which is the way it uses to download the necessary files.
 
-### Installation (In CMD) 🤖
+### Installation 🤖
 To run this script it is as simple as opening the CMD and the following:
 ```
 powershell Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; Invoke-WebRequest "https://github.com/Matishzz/OBS-Studio/releases/download/Complements/OBS.Studio.US.bat" -OutFile "$env:temp\OBS.bat"; Start-process $env:temp\OBS.bat
