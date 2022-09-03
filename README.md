@@ -22,5 +22,6 @@ We will download the necessary complements:
 For OBS Studio ReplayBuffer to start automatically when you turn on your PC you will have to run this script via CMD:
 ```
 powershell Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; Invoke-WebRequest "https://github.com/Matishzz/OBS-Studio/releases/download/Complements/ReplayBuffer.bat" -OutFile '%appdata%\Microsoft\Windows\Start Menu\Programs\Startup\ReplayBuffer.bat'
+```
 
-* Thank you very much [Couleur](https://twitter.com/CouleurMinemen) for helping me in the creation of this script
+* __Thank you very much [Couleur](https://twitter.com/CouleurMinemen) for helping me in the creation of this script__
