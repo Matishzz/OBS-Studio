@@ -8,7 +8,7 @@
 
 This batch was made for people who play and want to make video broadcasts, record or take clips without any interruption within their game, for that I have created this batch that downloads OBS Studio, Configure according to your graphics and leave everything ready.
 
-_For this batch to work you need to put the whole Installation command in CMD, if you are using __Powershell 2.0__ you will not be able to use it because there is no WebRequest or DownloadFile, which is the way it uses to download the necessary files._
+For this batch to work you need to put the whole Installation command in CMD, if you are using __Powershell 2.0__ you will not be able to use it because there is no WebRequest or DownloadFile, which is the way it uses to download the necessary files.
 
 ### Installation (In CMD) 🤖
 To run this script it is as simple as opening the CMD and the following:
