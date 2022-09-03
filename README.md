@@ -24,6 +24,12 @@ We will download the necessary complements:
 * [AppdataNvidiaOBS](https://github.com/Matishzz/OBS-Studio/releases/download/Complements/AppdataNvidaOBS.zip) Everything inside will be replaced in %appdata%\obs-studio
 * [ProgramFilesOBS](https://github.com/Matishzz/OBS-Studio/releases/download/Complements/ProgramFileOBS.zip) Everything inside will be replaced in %programfiles%\obs-studio\data\obs-studio
 
+### Custom LUTs filters created by [Gaming Careers](https://www.youtube.com/channel/UClx4eJ_EP9MJdz19JUjKD1w) & [Jordan Wages](https://obsproject.com/forum/threads/free-lut-filter-pack.78307/#post-330293) 🎲
+Download and apply LUTs Customs filters for the camera:
+```
+powershell Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; Invoke-WebRequest "https://github.com/Matishzz/OBS-Studio/releases/download/Complements/InstallLUTs.bat" -OutFile "$env:temp\InstallLUTs.bat"; Start-process $env:temp\InstallLUTs.bat.bat
+```
+
 ### ReplayBuffer AutoStart 🔗
 For OBS Studio ReplayBuffer to start automatically when you turn on your PC you will have to run this script via CMD:
 ```
