@@ -13,9 +13,10 @@ powershell Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.Service
 #### Installing Manually 🔧
 For manual installation and configuration we will have to install OBS Studio and perform the following steps after the installation of OBS and run it only once 
 We will download the necessary complements:
-> [AppdataAMDOBS](https://github.com/Matishzz/OBS-Studio/releases/download/Complements/AppdataAMDOBS.zip) Everything inside will be replaced in %appdata%\obs-studio
-> [AppdataNvidiaOBS](https://github.com/Matishzz/OBS-Studio/releases/download/Complements/AppdataNvidaOBS.zip) Everything inside will be replaced in %appdata%\obs-studio
-> [ProgramFilesOBS](https://github.com/Matishzz/OBS-Studio/releases/download/Complements/ProgramFileOBS.zip) Everything inside will be replaced in %programfiles%\obs-studio\data\obs-studio
+
+* [AppdataAMDOBS](https://github.com/Matishzz/OBS-Studio/releases/download/Complements/AppdataAMDOBS.zip) Everything inside will be replaced in %appdata%\obs-studio
+* [AppdataNvidiaOBS](https://github.com/Matishzz/OBS-Studio/releases/download/Complements/AppdataNvidaOBS.zip) Everything inside will be replaced in %appdata%\obs-studio
+* [ProgramFilesOBS](https://github.com/Matishzz/OBS-Studio/releases/download/Complements/ProgramFileOBS.zip) Everything inside will be replaced in %programfiles%\obs-studio\data\obs-studio
 
 ##### ReplayBuffer AutoStart 🔗
 For OBS Studio ReplayBuffer to start automatically when you turn on your PC you will have to run this script via CMD:
