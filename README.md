@@ -25,15 +25,13 @@ powershell Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.Service
 Please note that this script is still under development and may contain errors, my goal with this script is to find the easiest and best configuration for the user to be as comfortable as possible.
 </p>
 
-<details><summary><b><h3> ReplayBuffer AutoStart 🔗</h3></b></summary>
+- ### ReplayBuffer AutoStart 🔗
 If you want OBS Studio Replay Buffer to start automatically when you turn on the PC, you can run this command and that's it.
   
 ```ruby
 powershell Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; Invoke-WebRequest "https://github.com/Matishzz/OBS-Studio/releases/download/v1.0/ReplayBuffer.bat" -OutFile '%appdata%\Microsoft\Windows\Start Menu\Programs\Startup\ReplayBuffer.bat'
 ```
 If you have problems running it, you can download the [ReplayBuffer.bat](https://github.com/Matishzz/OBS-Studio/releases/download/v1.0/ReplayBuffer.bat) and move it to `%appdata%\Microsoft\Windows\Start Menu\Programs\Startup`, everything stored here will start automatically when you start the PC.
-
-</details>
 
 <br>
 
