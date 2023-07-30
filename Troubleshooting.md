@@ -77,6 +77,11 @@ For now the script does not have profiles for intel integrated graphics, if you 
 <br>
 <p align="center"> Some errors may start to appear over time because these are some errors that I was able to collect, if you experience any errors that are not on the list or if you are still having issues even though you have done the troubleshooting contact me via Twitter. </p>
 
-
-[![Twitter](https://img.shields.io/badge/-Twitter-black?style=for-the-badge&logo=twitter)](https://twitter.com/Matishzz)
-[![Discord](https://img.shields.io/badge/-Discord-black?style=for-the-badge&logo=discord)](https://discord.io/MatishzzTweaking)
+<p align="center">
+  <a href="https://twitter.com/Matishzz">
+    <img src="https://img.shields.io/badge/-Twitter-black?style=for-the-badge&logo=twitter" alt="Twitter">
+  </a>
+  <a href="https://discord.io/MatishzzTweaking">
+    <img src="https://img.shields.io/badge/-Discord-black?style=for-the-badge&logo=discord" alt="Discord">
+  </a>
+</p>
