@@ -40,7 +40,12 @@ To import the profiles we will run the batch of our respective graphics card, if
 To import the theme from obs you have to download the theme and drag it to `"%programfiles%\obs-studio\data\obs-studio\themes`, the automatic script imports the [Moonlight theme](https://github.com/WyzzyMoon/Moonlight/releases/tag/v1.0), but you can see more at [here](https://obsproject.com/forum/resources/categories/themes.10/).
 
 <br>
-<br>
 
-[![Twitter](https://img.shields.io/badge/-Twitter-black?style=for-the-badge&logo=twitter)](https://twitter.com/Matishzz)
-[![Discord](https://img.shields.io/badge/-Discord-black?style=for-the-badge&logo=discord)](https://discord.io/MatishzzTweaking)
+<p align="center">
+  <a href="https://twitter.com/Matishzz">
+    <img src="https://img.shields.io/badge/-Twitter-black?style=for-the-badge&logo=twitter" alt="Twitter">
+  </a>
+  <a href="https://discord.io/MatishzzTweaking">
+    <img src="https://img.shields.io/badge/-Discord-black?style=for-the-badge&logo=discord" alt="Discord">
+  </a>
+</p>
