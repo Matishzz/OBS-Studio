@@ -11,7 +11,7 @@ This is the troubleshooting section if you have been redirected here you may hav
 </tr>
 </table>
 
-<p align="center"> When using this Bath you may experience problems due to several things, this project is still under development so there may still be some problems or bugs, here is a list of some of the problems and their solutions </p>
+When using this Bath you may experience problems due to several things, this project is still under development so there may still be some problems or bugs, here is a list of some of the problems and their solutions
 
 <details><summary><b><h3> There was an error during the installation of Chocolatey 🔧</h3></b></summary>
 
