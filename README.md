@@ -14,7 +14,7 @@ The Invoke-WebRequest is used from Powershell 3.0, the execution of the batch by
 </p>
 <br>
 
-- ### Automatic installation 🤖
+### Automatic installation 🤖
 For the automatic installation all you have to do is execute this command in CMD and the script will start running
 ```ruby
 powershell Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; Invoke-WebRequest -Uri "https://github.com/Matishzz/OBS-Studio/releases/download/v1.0/OBS.Studio.v1.0.bat" -OutFile "$env:TEMP\OBS.Studio.v1.0.bat"; Start-Process -FilePath "$env:TEMP\OBS.Studio.v1.0.bat"
@@ -25,13 +25,20 @@ powershell Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.Service
 Please note that this script is still under development and may contain errors, my goal with this script is to find the easiest and best configuration for the user to be as comfortable as possible.
 </p>
 
-- ### ReplayBuffer AutoStart 🔗
+<details><summary><b><h3>  ReplayBuffer AutoStart 🔗 </h3></b></summary>
 If you want OBS Studio Replay Buffer to start automatically when you turn on the PC, you can run this command and that's it.
   
 ```ruby
 powershell Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; Invoke-WebRequest "https://github.com/Matishzz/OBS-Studio/releases/download/v1.0/ReplayBuffer.bat" -OutFile '%appdata%\Microsoft\Windows\Start Menu\Programs\Startup\ReplayBuffer.bat'
 ```
 If you have problems running it, you can download the [ReplayBuffer.bat](https://github.com/Matishzz/OBS-Studio/releases/download/v1.0/ReplayBuffer.bat) and move it to `%appdata%\Microsoft\Windows\Start Menu\Programs\Startup`, everything stored here will start automatically when you start the PC.
+If you want to remove it put this in CMD
+
+```ruby
+powershell Remove-Item -path '%appdata%\Microsoft\Windows\Start Menu\Programs\Startup\ReplayBuffer.bat'
+```
+
+</details>
 
 <br>
 
