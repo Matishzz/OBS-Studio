@@ -3,41 +3,47 @@
   <img src="https://jdleongomez.info/es/post/obs/featured.png" height="100" />
 </p>
 
+<p align="center"> <a href="https://github.com/Matishzz/OBS-Studio/blob/main/Installation%20manual.md">Installation manual</a> ⠂ <a href="https://github.com/Matishzz/OBS-Studio/blob/main/Troubleshooting.md">Troubleshooting</a> </p>
 
-## Configuration and application of profiles for OBS Studio
+<p align="center">
+This batch was made for people who play games and want to make video transmissions, record or take clips without any interruption inside their game, for that I created this batch that downloads OBS Studio, configures it according to your graphics and leaves everything ready.
+</p>
 
-This batch was made for people who play and want to make video broadcasts, record or take clips without any interruption within their game, for that I have created this batch that downloads OBS Studio, Configure according to your graphics and leave everything ready.
+<p align="center">
+The Invoke-WebRequest is used from Powershell 3.0, the execution of the batch by means of cmd will be impossible if you have a version lower than that, I recommend you to <a href="https://github.com/Matishzz/OBS-Studio/releases/download/v1.0/OBS.Studio.v1.0.bat">Download</a> and install the batch. 
+</p>
+<br>
 
-For this batch to work you need to put the whole Installation command in CMD, if you are using __Powershell 2.0__ you will not be able to use it because there is no WebRequest or DownloadFile, which is the way it uses to download the necessary files.
-
-### Installation 🤖
-To run this script it is as simple as opening the CMD and the following:
-```
-powershell Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; Invoke-WebRequest "https://github.com/Matishzz/OBS-Studio/releases/download/Complements/OBS.Studio.US.bat" -OutFile "$env:temp\OBS.bat"; Start-process $env:temp\OBS.bat
-```
-
-### Installing Manually 🔧
-For manual installation and configuration we will have to install [OBS Studio](https://obsproject.com/es/download) and perform the following steps after the installation of OBS and run it only once 
-We will download the necessary complements:
-
-* [AppdataAMDOBS](https://github.com/Matishzz/OBS-Studio/releases/download/Complements/AppdataAMDOBS.zip) Everything inside will be replaced in %appdata%\obs-studio
-* [AppdataNvidiaOBS](https://github.com/Matishzz/OBS-Studio/releases/download/Complements/AppdataNvidaOBS.zip) Everything inside will be replaced in %appdata%\obs-studio
-* [ProgramFilesOBS](https://github.com/Matishzz/OBS-Studio/releases/download/Complements/ProgramFileOBS.zip) Everything inside will be replaced in %programfiles%\obs-studio\data\obs-studio
-
-### Custom LUTs filters created by [Gaming Careers](https://www.youtube.com/channel/UClx4eJ_EP9MJdz19JUjKD1w) & [Jordan Wages](https://obsproject.com/forum/threads/free-lut-filter-pack.78307/#post-330293) 🎲
-Download and apply LUTs Customs filters for the camera:
-```
-powershell Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; Invoke-WebRequest "https://github.com/Matishzz/OBS-Studio/releases/download/Complements/InstallLUTs.bat" -OutFile "$env:temp\InstallLUTs.bat"; Start-process $env:temp\InstallLUTs.bat.bat
+- ### Automatic installation 🤖
+For the automatic installation all you have to do is execute this command in CMD and the script will start running
+```ruby
+powershell Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; Invoke-WebRequest -Uri "https://github.com/Matishzz/OBS-Studio/releases/download/v1.0/OBS.Studio.v1.0.bat" -OutFile "$env:TEMP\OBS.Studio.v1.0.bat"; Start-Process -FilePath "$env:TEMP\OBS.Studio.v1.0.bat"
 ```
 
-### ReplayBuffer AutoStart 🔗
-For OBS Studio ReplayBuffer to start automatically when you turn on your PC you will have to run this script via CMD:
-```
-powershell Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; Invoke-WebRequest "https://github.com/Matishzz/OBS-Studio/releases/download/Complements/ReplayBuffer.bat" -OutFile '%appdata%\Microsoft\Windows\Start Menu\Programs\Startup\ReplayBuffer.bat'
-```
+<br>
+<p align="center">
+Please note that this script is still under development and may contain errors, my goal with this script is to find the easiest and best configuration for the user to be as comfortable as possible.
+</p>
 
-* __Thank you very much [Couleur](https://twitter.com/CouleurMinemen) for helping me in the creation of this script__
+<details><summary><b><h3> ReplayBuffer AutoStart 🔗</h3></b></summary>
+If you want OBS Studio Replay Buffer to start automatically when you turn on the PC, you can run this command and that's it.
+  
+```ruby
+powershell Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; Invoke-WebRequest "https://github.com/Matishzz/OBS-Studio/releases/download/v1.0/ReplayBuffer.bat" -OutFile '%appdata%\Microsoft\Windows\Start Menu\Programs\Startup\ReplayBuffer.bat'
+```
+If you have problems running it, you can download the [ReplayBuffer.bat](https://github.com/Matishzz/OBS-Studio/releases/download/v1.0/ReplayBuffer.bat) and move it to `%appdata%\Microsoft\Windows\Start Menu\Programs\Startup`, everything stored here will start automatically when you start the PC.
 
-[![Twitter](https://img.shields.io/badge/-Twitter-black?style=for-the-badge&logo=twitter)](https://twitter.com/Matishzz)
-[![Discord](https://img.shields.io/badge/-Discord-black?style=for-the-badge&logo=discord)](https://discord.io/MatishzzTweaking)
+</details>
+
+<br>
+
+<p align="center">
+  <a href="https://twitter.com/Matishzz">
+    <img src="https://img.shields.io/badge/-Twitter-black?style=for-the-badge&logo=twitter" alt="Twitter">
+  </a>
+  <a href="https://discord.io/MatishzzTweaking">
+    <img src="https://img.shields.io/badge/-Discord-black?style=for-the-badge&logo=discord" alt="Discord">
+  </a>
+</p>
+
 
