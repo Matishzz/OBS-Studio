@@ -69,6 +69,8 @@ For now the script does not have profiles for intel integrated graphics, if you 
   ```sh
   choco uninstall obs-studio -y --force
   ```
+Also some users experience an error message saying `'choco' is not recognized as an internal or external command,
+operable program or batch file."` even after chocolatey has been successfully installed, all that is necessary to fix this is to close the script and open it again.
 
 </details>
 
