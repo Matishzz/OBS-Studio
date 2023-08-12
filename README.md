@@ -6,7 +6,7 @@
 <p align="center"> <a href="https://github.com/Matishzz/OBS-Studio/blob/main/Installation%20manual.md">Installation manual</a> ⠂ <a href="https://github.com/Matishzz/OBS-Studio/blob/main/Troubleshooting.md">Troubleshooting</a> </p>
 
 <p align="center">
-The Invoke-WebRequest is used from Powershell 3.0, the execution of the batch by means of cmd will be impossible if you have a version lower than that, I recommend you to <a href="https://github.com/Matishzz/OBS-Studio/releases/download/v1.0/OBS.Studio.v1.0.bat">Download</a> and install the batch. 
+This batch was made for people who play games and want to make streamings, record or take clips without any interruption inside their game, for that I created this batch that downloads OBS Studio, configures it according to your graphics and leaves everything ready. 
 </p>
 <br>
 
