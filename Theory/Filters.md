@@ -4,13 +4,6 @@
 <p align="center"> In this section I will cover all the OBS Studio filters for your streams/videos/clips, the information of the mechanisms that take each of these filters were from OBS Studio version <a href="https://github.com/obsproject/obs-studio/releases/tag/29.1.3">29.1.3 </a> released on June 19th. </p>
 <br>
 
-# Table of Contents :books:
-* Important content to consider
-  * Decibels (dB)
-  * Color Adjustments
-  * Frequency
-  * Parametric Equalization
-
 * Audio Filters
   * 3-Band Equalizer
   * Compressor
@@ -36,15 +29,5 @@
   * Scroll
   * Sharpen
 <br>
-
-# Important content to consider :microphone:
-
-### Decibels (dB)
-
-### Color Adjustments
-
-### Frequency
-
-### Parametric Equalization
 
 # <p align="center"> You're very early, I'm not finished yet LOL </p>
