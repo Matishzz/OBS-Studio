@@ -31,7 +31,6 @@ For now the script does not have profiles for intel integrated graphics, if you 
   
 ```sh
 * IO Ports
-  * Initial Display Output > PCIe 1 Slot
   * Integrated Graphics > Disabled
     * F10 > OK
 ```
