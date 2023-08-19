@@ -44,13 +44,13 @@ The OBS Studio section gives us 3 options in this filter, the options are as fol
 
 It is important to talk about its configurable parameters, OBS gives us the possibility to configure this opening and closing threshold together with some "timings", the explanation of each one is this:
 
-* Close Threshold
+* <b>Close Threshold</b>
   * This is the volume level below which the Noise Gate will close its gate and reduce the volume.
-* Open Threshold
+* <b>Open Threshold</b>
   * This threshold controls the point at which the Noise Gate will open its gate again, allowing the signal to flow, when the audio signal is higher than this dB the gate will open.
-* Attack Time
+* <b>Attack Time</b>
   * This time expressed in "ms", determines how long it takes for the Noise Gate to close once the closing threshold is crossed.
-* Hold Time
+* <b>Hold Time</b>
   * It is the time during which the door remains closed after the closing threshold has been crossed, this helps a lot with audio jitter (I won't talk about audio jitter here, but here is a [document](https://www.by-rutgers.nl/PDFiles/Audio%20Jitter.pdf) where this phenomenon is discussed in detail). 
-* Release Time
+* <b>Release Time</b>
   * When the door closes and the opening threshold is reached, the release time determines how long it takes for the door to fully open.
