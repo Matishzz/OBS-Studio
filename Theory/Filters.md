@@ -13,7 +13,6 @@
  
 * Audio Filters
    * Noise Gate
-   * VST 2.x
  
  # Color Correction 🥀
 To understand this filter you must first understand how video capture works, when OBS captures a source, such as the game or the full screen, it obtains a sequence of images composed of pixels. Each pixel has three components red, green and blue, represented by numerical values usually 0 to 255 (if working in the RGB 8bit color space) these RGB channel values define the color and intensity of each pixel in the image, the value 0 represents the total absence of color while 255 indicates the maximum intensity of this color. When the scene is captured by OBS, the RGB values are stored in a matrix, where each element of the matrix represents a pixel and contains the values of its three channels, this pixel matrix is essentially a representation of the captured image OBS processes this matrix to display the image in real time or save it to a file.
@@ -39,7 +38,7 @@ The OBS Studio section gives us 3 options in this filter, the options are as fol
 * <b>Key Color Spill Reduction (1-1000)</b>
   * This is related to reflections or illumination, usually left at 100 (default).
  
- # Noise Gate 🌛
+ # Noise Gate 🚪
  This is an audio effect, in my OBS script I usually leave it default in very general values but configuring it is very interesting and can be improved a lot, its explanation is simple, its objective is to eliminate/reduce unwanted noise in the desired audio track, it acts as its name says as a door that opens or closes depending on such thresholds and times.
 
 It is important to talk about its configurable parameters, OBS gives us the possibility to configure this opening and closing threshold together with some "timings", the explanation of each one is this:
