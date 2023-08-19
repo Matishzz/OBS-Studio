@@ -8,7 +8,7 @@
 
 # Table of Contents :books:
 * Effect Filters
-  * Color Correction
+  * <a href="https://github.com/Matishzz/OBS-Studio/blob/main/Theory/Filters.md#color-correction-">Color Correction</a>
   * Chroma Key
  
 * Audio Filters
