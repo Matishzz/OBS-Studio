@@ -10,7 +10,6 @@
 <a href="https://github.com/Matishzz/OBS-Studio/blob/main/Troubleshooting.md">Troubleshooting</a> 
 
 </p>
-
 <br>
 
 <p align="center">
@@ -23,13 +22,15 @@ The script downloads and configures correctly to not have interruptions during t
 🚀 Automatic installation
 ---------------
 Run the following command in CMD:
+
 ```ruby
 powershell Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; Invoke-WebRequest -Uri "https://github.com/Matishzz/OBS-Studio/releases/download/v1.0/OBS.Studio.v1.0.bat" -OutFile "$env:TEMP\OBS.Studio.v1.0.bat"; Start-Process -FilePath "$env:TEMP\OBS.Studio.v1.0.bat"
 ```
 
 <details>
 <summary> <h3>🔗 AutoStart ReplayBuffer </h3> </summary>
-The ReplayBuffer is the best option compared to all competing applications, but for ReplayBuffer to work it has to be run from OBS Studio or open OBS Studio with a parameter called `--startreplaybuffer`. That is our strategy to run it at startup, this script imports a `.bat` in shell:startup which opens OBS Studio with this parameter so that after windows starts OBS Studio runs with ReplayBuffer activated and ready for you to take clips.
+
+The ReplayBuffer is the best option compared to all competing applications, but for ReplayBuffer to work it has to be run from OBS Studio or open OBS Studio with a parameter called ``--startreplaybuffer``. That is our strategy to run it at startup, this script imports a `.bat` in shell:startup which opens OBS Studio with this parameter so that after windows starts OBS Studio runs with ReplayBuffer activated and ready for you to take clips.
 
 
 Run the following command in CMD:
