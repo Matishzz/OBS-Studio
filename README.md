@@ -11,7 +11,8 @@
 
 </p>
 
----------------
+<br>
+
 <p align="center">
 This project started on <b>August 3, 2021</b>, with the main objective to help those who had no idea or time to properly configure OBS Studio. 
 The script downloads and configures correctly to not have interruptions during transmissions or frame drops, 6 profiles are applied which you can apply for different streaming/recording qualities, which are <b>1080p</b>, <b>936p</b> and <b>720p</b> in its two variations of fps <b>30</b> and <b>60</b>, also the replaybuffer is configured to generate clips manually with the <b>F9</b> key and finally a filter is added to the microphone called noise gate which sets a threshold at which the gate will open and let the audio through, this to avoid static and annoying ambient noises.
