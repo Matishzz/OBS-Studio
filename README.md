@@ -49,13 +49,14 @@ del "%appdata%\Microsoft\Windows\Start Menu\Programs\Startup\ReplayBuffer.bat"
 <hr>
 </details>
 
-📜 Objectives for OBS Studio v1.8
+📜 Objectives for OBS Studio v1.5
 ---------------
 
 ```sh
 * News Themes
 * Assign an installation path
-* Scene backup
+* Intel HD Graphics Support
+* Fixing bugs
 ```
 
 
