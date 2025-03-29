@@ -1,20 +1,21 @@
-<p align="center">
+<div align="center">
+  <img src="https://jdleongomez.info/es/post/obs/featured.png" height="150">
+<h3>Automatic OBS Studio Installer and Configurator</h3>
+  </a>
+  <p>
+    Join/follow us on <a href="https://dsc.gg/matishzz-tweak" target="_blank">Discord</a> | <a href="https://x.com/Matishzz" target="_blank">𝕏 (Twitter)</a>
+  </p>
+  <p>
+    Installation Manual ⠂Troubleshooting ⠂ AMF Options
+    
+  </p>
+</div>
 
-  <img src="https://jdleongomez.info/es/post/obs/featured.png" height="100">
-  
-  <h3 align="center">Automatic OBS Studio Installer and Configurator</h3>
-  
-<p align="center">
-<a href="https://github.com/Matishzz/OBS-Studio/blob/main/Installation%20manual.md">Installation manual</a>
-⠂ 
-<a href="https://github.com/Matishzz/OBS-Studio/blob/main/Troubleshooting.md">Troubleshooting</a> 
-
-</p>
-<br>
+---
 
 <p align="center">
 This project started on <b>August 3, 2021</b>, with the main objective to help those who had no idea or time to properly configure OBS Studio. 
-The script downloads and configures correctly to not have interruptions during transmissions or frame drops, 6 profiles are applied which you can apply for different streaming/recording qualities, which are <b>1080p</b>, <b>936p</b> and <b>720p</b> in its two variations of fps <b>30</b> and <b>60</b>, also the replaybuffer is configured to generate clips manually with the <b>F9</b> key and finally a filter is added to the microphone called noise gate which sets a threshold at which the gate will open and let the audio through, this to avoid static and annoying ambient noises.
+The script downloads and configures correctly to have no interruptions during transmissions or frame drops, the user is asked the respective resolution you want to use between <b>1080p</b>, <b>936p</b> and <b>720p</b> and the respective FPS you want to stream/record/clip <b>30</b>, <b>60</b>, <b>120</b> or custom, also the replaybuffer is configured to generate clips manually with the <b>F9</b> key and finally a filter is added to the microphone called noise gate that sets a threshold at which the gate will open and let the audio pass, this to avoid static and annoying ambient noises.
 </p>
 
 <br>
@@ -23,54 +24,30 @@ The script downloads and configures correctly to not have interruptions during t
 ---------------
 Run the following command in CMD:
 
-```ruby
-powershell Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; Invoke-WebRequest -Uri "https://github.com/Matishzz/OBS-Studio/releases/download/v1.0/OBS.Studio.v1.0.bat" -OutFile "$env:TEMP\OBS.Studio.v1.0.bat"; Start-Process -FilePath "$env:TEMP\OBS.Studio.v1.0.bat"
+```bash
+powershell Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; Invoke-WebRequest -Uri "https://github.com/Matishzz/OBS-Studio/releases/download/v1.5/OBS.Studio.1.5.bat" -OutFile "$env:TEMP\OBS.Studio.1.5.bat"; Start-Process -FilePath "$env:TEMP\OBS.Studio.1.5.bat"
 ```
+> [!WARNING]
+> The latest version of OBS Studio containing the <a href="https://obsproject.com/kb/capture-hook-certificate-update">new certificate</a> will be installed, if you experience problems with game capture, please refer to the <a href="https://github.com/Matishzz/TESTT3/blob/main/Troubleshooting.md#game-capture-does-not-work-">troubleshooting\capture-hook</a>
 
-<details>
-<summary> <h3>🔗 AutoStart ReplayBuffer </h3> </summary>
-
-The ReplayBuffer is the best option compared to all competing applications, but for ReplayBuffer to work it has to be run from OBS Studio or open OBS Studio with a parameter called ``--startreplaybuffer``. That is our strategy to run it at startup, this script imports a `.bat` in shell:startup which opens OBS Studio with this parameter so that after windows starts OBS Studio runs with ReplayBuffer activated and ready for you to take clips.
-
-
+🔗 ReplayBuffer Startup
+---------------
 Run the following command in CMD:
-```ruby
-powershell Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; Invoke-WebRequest "https://github.com/Matishzz/OBS-Studio/releases/download/v1.0/ReplayBuffer.bat" -OutFile '%appdata%\Microsoft\Windows\Start Menu\Programs\Startup\ReplayBuffer.bat'
+```bash
+reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /v "obs64" /t REG_SZ /d "cmd.exe /c start \"\" /d \"%programfiles%\obs-studio\bin\64bit\" obs64.exe --disable-shutdown-check --startreplaybuffer --disable-missing-files-check --minimize-to-tray" /f
 ```
-<br> 
+If you want to add more specific parameters you can consult <a href="https://obsproject.com/kb/launch-parameters">launch-parameters</a>
 
-If you want to remove it put this in CMD
-```ruby
-del "%appdata%\Microsoft\Windows\Start Menu\Programs\Startup\ReplayBuffer.bat"
-```
-
- <h3 align="center"> :exclamation: If you experience problems running the script, you should manually move the <a href="https://github.com/Matishzz/OBS-Studio/releases/download/v1.0/ReplayBuffer.bat">Replaybuffer.bat</a> to shell:startup (Win + R > shell:startup) :exclamation: </h3>
-
-<hr>
-</details>
-
-📜 Objectives for OBS Studio v1.5
+📜 Objectives for OBS Studio v1.8
 ---------------
 
 ```sh
 * News Themes
+* Select versions
 * Assign an installation path
-* Intel HD Graphics Support
-* Fixing bugs
+* Filters
+* Scene backup
 ```
 
-
-❔ What's behind the script
----------------
-<a href="https://chocolatey.org/">Chocolatey</a> is used for the installation of OBS Studio, then the GPU is identified if it is AMD or NVIDIA, then the profiles folder is created which contains ``basic.ini`` that stores the configuration is written with the configuration without using dependencies nor anything outside of Powershell 2.0 and CMD, after creating the 6 profiles with their 2 variants, the <a href="https://github.com/WyzzyMoon/Moonlight/releases/tag/v1.0">Mooonlight</a> theme is imported using Invoke-WebRequest
-
-<p align="center">
-  <a href="https://twitter.com/Matishzz">
-    <img src="https://img.shields.io/badge/-Twitter-black?style=for-the-badge&logo=twitter" alt="Twitter">
-  </a>
-  <a href="https://discord.io/MatishzzTweaking">
-    <img src="https://img.shields.io/badge/-Discord-black?style=for-the-badge&logo=discord" alt="Discord">
-  </a>
-</p>
 
 
