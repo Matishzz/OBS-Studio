@@ -24,7 +24,7 @@ The script downloads and configures correctly to have no interruptions during tr
 ---------------
 Run the following command in CMD:
 
-```bash
+```batch
 powershell Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; Invoke-WebRequest -Uri "https://github.com/Matishzz/OBS-Studio/releases/download/v1.5/OBS.Studio.1.5.bat" -OutFile "$env:TEMP\OBS.Studio.1.5.bat"; Start-Process -FilePath "$env:TEMP\OBS.Studio.1.5.bat"
 ```
 > [!WARNING]
@@ -33,7 +33,7 @@ powershell Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.Service
 🔗 ReplayBuffer Startup
 ---------------
 Run the following command in CMD:
-```bash
+```batch
 reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /v "obs64" /t REG_SZ /d "cmd.exe /c start \"\" /d \"%programfiles%\obs-studio\bin\64bit\" obs64.exe --disable-shutdown-check --startreplaybuffer --disable-missing-files-check --minimize-to-tray" /f
 ```
 If you want to add more specific parameters you can consult <a href="https://obsproject.com/kb/launch-parameters">launch-parameters</a>
