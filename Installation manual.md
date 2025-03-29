@@ -6,7 +6,7 @@
     Join/follow us on <a href="https://dsc.gg/matishzz-tweak" target="_blank">Discord</a> | <a href="https://x.com/Matishzz" target="_blank">𝕏 (Twitter)</a>
   </p>
   <p>
-    Automatic installation ⠂Troubleshooting ⠂ AMF Options
+    <a href="https://github.com/Matishzz/OBS-Studio">Automatic installation</a> ⠂<a href="https://github.com/Matishzz/OBS-Studio/blob/main/Troubleshooting.md">Troubleshooting</a> ⠂ AMF Options
     
   </p>
 </div>  
@@ -14,7 +14,7 @@
 ---
 
 <p align="center">
-Most of the errors have been clarified in <a href="https://github.com/Matishzz/TESTT3/blob/main/Troubleshooting.md">Troubleshooting</a> but it may be present some anomaly that I have not taken into account when making the respective <code>.md</code>, that is why I give the possibility and ease to the user to do it this way, also this gives the possibility to users who do not have the dependencies of Invoke-WebRequest (crucial element in the automatic installation).
+Most of the errors have been clarified in <a href="https://github.com/Matishzz/OBS-Studio/blob/main/Troubleshooting.md">Troubleshooting</a> but it may be present some anomaly that I have not taken into account when making the respective <code>.md</code>, that is why I give the possibility and ease to the user to do it this way, also this gives the possibility to users who do not have the dependencies of Invoke-WebRequest (crucial element in the automatic installation).
 </p>
 
 <br>
@@ -22,7 +22,7 @@ Most of the errors have been clarified in <a href="https://github.com/Matishzz/T
 ## 🔗 Installation of OBS Studio
 This step is very simple, the only thing we have to do is download the installer of the latest version of <a href="https://obsproject.com/es/download">OBS Studio</a> and run it, you can also install other versions in <a href="https://github.com/obsproject/obs-studio/releases">obs-studio/releases</a> although some old versions have problems with the linking of twitch accounts and may conflict with some configurations due to changes in variables.
 > [!WARNING]
-> The latest version of OBS Studio containing the <a href="https://obsproject.com/kb/capture-hook-certificate-update">new certificate</a> will be installed, if you experience problems with game capture, please refer to the <a href="https://github.com/Matishzz/TESTT3/blob/main/Troubleshooting.md#game-capture-does-not-work-capture-hook-">troubleshooting\capture-hook</a>
+> The latest version of OBS Studio containing the <a href="https://obsproject.com/kb/capture-hook-certificate-update">new certificate</a> will be installed, if you experience problems with game capture, please refer to the <a href="https://github.com/Matishzz/OBS-Studio/blob/main/Troubleshooting.md#game-capture-does-not-work-">troubleshooting\capture-hook</a>
 
 
 ## 📌 Running OBS Studio for the first time
