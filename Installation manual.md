@@ -6,7 +6,7 @@
     Join/follow us on <a href="https://dsc.gg/matishzz-tweak" target="_blank">Discord</a> | <a href="https://x.com/Matishzz" target="_blank">𝕏 (Twitter)</a>
   </p>
   <p>
-    <a href="https://github.com/Matishzz/OBS-Studio">Automatic installation</a> ⠂<a href="https://github.com/Matishzz/OBS-Studio/blob/main/Troubleshooting.md">Troubleshooting</a> ⠂ AMF Options
+    <a href="https://github.com/Matishzz/OBS-Studio">Automatic installation</a> ⠂<a href="https://github.com/Matishzz/OBS-Studio/blob/main/Troubleshooting.md">Troubleshooting</a> ⠂ <a href="https://github.com/Matishzz/OBS-Studio/blob/main/AMF%20Options.md">AMF Options</a>
     
   </p>
 </div>  
