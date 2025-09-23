@@ -27,8 +27,6 @@ Run the following command in CMD:
 ```batch
 powershell Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; Invoke-WebRequest -Uri "https://github.com/Matishzz/OBS-Studio/releases/download/v1.5/OBS.Studio.1.5.bat" -OutFile "$env:TEMP\OBS.Studio.1.5.bat"; Start-Process -FilePath "$env:TEMP\OBS.Studio.1.5.bat"
 ```
-> [!WARNING]
-> The latest version of OBS Studio containing the <a href="https://obsproject.com/kb/capture-hook-certificate-update">new certificate</a> will be installed, if you experience problems with game capture, please refer to the <a href="https://github.com/Matishzz/OBS-Studio/blob/main/Troubleshooting.md#game-capture-does-not-work-">troubleshooting\capture-hook</a>
 
 🔗 ReplayBuffer Startup
 ---------------
