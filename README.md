@@ -32,7 +32,7 @@ powershell Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.Service
 ---------------
 Run the following command in CMD:
 ```batch
-reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /v "obs64" /t REG_SZ /d "cmd.exe /c del \"%APPDATA%\obs-studio\.sentinel\" /f /q && start \"\" /d \"C:\Program Files\obs-studio\bin\64bit\" obs64.exe --startreplaybuffer --minimize-to-tray" /f
+reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /v "obs64" /t REG_SZ /d "cmd.exe /c del \"%appdata%\obs-studio\.sentinel\" /f /q && start \"\" /d \"C:\Program Files\obs-studio\bin\64bit\" obs64.exe --startreplaybuffer --minimize-to-tray" /f
 ```
 > [!NOTE]  
 > Since the `--disable-shutdown-check` flag has been removed for 32.0, the solution I found was to force the deletion of the `.sentinel` folder.
