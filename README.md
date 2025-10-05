@@ -35,7 +35,7 @@ Run the following command in CMD:
 reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /v "obs64" /t REG_SZ /d "cmd.exe /c del \"%appdata%\obs-studio\.sentinel\" /f /q && start \"\" /d \"C:\Program Files\obs-studio\bin\64bit\" obs64.exe --startreplaybuffer --minimize-to-tray" /f
 ```
 > [!NOTE]  
-> Since the `--disable-shutdown-check` flag has been removed for 32.0, the solution I found was to force the deletion of the `.sentinel` folder.
+> Since the `--disable-shutdown-check` flag has been removed for [32.0](https://github.com/obsproject/obs-studio/releases/tag/32.0.0#:~:text=Removed%20the%20%2D%2Ddisable%2Dshutdown%2Dcheck%20launch%20flag%20%5BPatTheMav%5D), the solution I found was to force the deletion of the `.sentinel` folder.
 
 If you want to add more specific parameters you can consult <a href="https://obsproject.com/kb/launch-parameters">launch-parameters</a>
 
